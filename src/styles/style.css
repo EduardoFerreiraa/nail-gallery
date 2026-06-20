@@ -4,17 +4,28 @@
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: #0D0E10;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: #090A0B;
     padding: 20px;
+    border-bottom: 1px solid #ff5e7983;
 }
 
 #logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#logo > h1 > span {
+    color: #ff5e79;
 }
 
 #nav-list {
@@ -35,14 +46,185 @@
     font-size: 15px;
     color: #ffffff;
     border: 2px solid #ff5e79;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 20px;
     background: transparent;
     cursor: pointer;
     transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .agende-whatsapp button:hover {
     color: white;
     background-color: #ff5e79;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+    background: #0D0E10;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title-content {
+    text-align: center;
+    padding: 15px;
+}
+
+.title-content h1 {
+    color: #ff5e79;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 5px;
+}
+
+.title-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: white;
+}
+
+.conheca-modelos {
+    color: #ff5e79;
+    font-size: 1.6rem;
+    font-family: cursive;
+}
+
+.aplicado-clientes {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.container-cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.377);
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.actions button {
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 10px;
+    background: transparent;
+    padding: 12px 50px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: #ff5e79;
+    border: 1px solid black;
+}
+
+.content-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.nails-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+}
+
+.content-modelo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+}
+
+.modelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.modelo > h3 > span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ff5e79;
+}
+
+.modelo p {
+    color: gray;
+}
+
+.agenda {
+    width: 30%;
+}
+
+.agende-aqui {
+    font-weight: bold;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #ff5e79;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.agende-aqui:hover {
+    background-color: #ff3c5c;
+    transform: translateY(-10px);
+}
+
+footer {
+    border-top: 1px solid rgb(61, 61, 61);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: gray;
 }
