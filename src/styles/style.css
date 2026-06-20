@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: "Inter", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,18 +18,22 @@ body {
     border-bottom: 1px solid #ff5e7983;
 }
 
-#logo h1 {
+#logo a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     font-size: 1.8rem;
     text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-#logo > h1 > span {
+#logo > a > span {
     color: #ff5e79;
 }
 
 #nav-list {
+    display: flex;
+    gap: 30px;
     list-style: none;
 }
 
@@ -36,28 +41,67 @@ body {
     font-size: 20px;
     color: white;
     padding: 10px;
-    border-bottom: 2.5px solid #ff5e79;
     text-transform: uppercase;
     font-weight: bolder;
-    color: #ff5e79;
+    color: white;
+    border-bottom: 2.5px solid transparent;
+    cursor: pointer;
 }
 
-.agende-whatsapp button {
-    font-size: 15px;
-    color: #ffffff;
-    border: 2px solid #ff5e79;
-    border-radius: 15px;
-    padding: 20px;
-    background: transparent;
+#nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-item:hover {
+    border-bottom: 2.5px solid #ff5e79;
+}
+
+.agende-aqui {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #ff5e79;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
     cursor: pointer;
     transition: 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 500;
+    text-decoration: none;
+}
+
+.agende-aqui:hover {
+    background-color: #ff3c5c;
+    transform: translateY(-10px);
+}
+
+.agende-header {
+    border: 2px solid #ff5e79;
+    padding: 20px;
+    background: transparent;
+}
+
+.agende-header:hover {
+    transform: scale(1.03);
+    background-color: #ff5e79;
 }
 
 .agende-whatsapp button:hover {
     color: white;
     background-color: #ff5e79;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 main {
@@ -113,6 +157,16 @@ main {
     width: 100%;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(136, 136, 136, 0.377);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .actions {
@@ -195,27 +249,10 @@ main {
 }
 
 .agenda {
-    width: 30%;
+    width: 20%;
 }
 
-.agende-aqui {
-    font-weight: bold;
-    width: 100%;
-    padding: 20px 80px;
-    background-color: #ff5e79;
-    border: none;
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
 
-.agende-aqui:hover {
-    background-color: #ff3c5c;
-    transform: translateY(-10px);
-}
 
 footer {
     border-top: 1px solid rgb(61, 61, 61);

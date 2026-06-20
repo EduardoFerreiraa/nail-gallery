@@ -1,0 +1,142 @@
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width: 1024px) {
+
+    main {
+        width: 90%;
+    }
+
+    .nails-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content-modelo {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .agenda {
+        width: auto;
+    }
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+    }
+
+    .agende-header {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        background: #090A0B;
+        border-top: 1px solid rgba(255, 94, 121, 0.2);
+    }
+
+    #nav.active {
+        display: block;
+    }
+
+    #nav-list {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+    }
+
+    #nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title-container {
+        padding: 40px 20px;
+    }
+
+    .title-content h2 {
+        font-size: 4rem;
+    }
+
+    .nails-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-modelo {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .agenda {
+        width: auto;
+    }
+}
+
+/* ==========================
+   CELULARES PEQUENOS
+========================== */
+
+@media (max-width: 480px) {
+
+    #logo a {
+        font-size: 1.4rem;
+    }
+
+    #nav-item {
+        font-size: 15px;
+    }
+
+    .title-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .title-content h2 {
+        font-size: 3rem;
+    }
+
+    .conheca-modelos {
+        font-size: 1rem;
+    }
+
+    .nails-card {
+        grid-template-columns: 1fr;
+    }
+
+    .actions button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .container-cards {
+        justify-content: center;
+    }
+
+    .modelo h3 {
+        font-size: 1.7rem;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 14px;
+    }
+}

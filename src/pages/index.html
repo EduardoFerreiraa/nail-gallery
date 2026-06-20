@@ -3,86 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de unhas</title>
+    <title>Galeria de Unhas</title>
+
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="container">
+
         <div id="logo">
-            <h1><span>Nail</span> Giovanna</h1>
+            <a href="index.html">
+                <span>Nail</span> Giovanna
+            </a>
         </div>
+
         <nav id="nav">
             <ul id="nav-list">
-                <li id="nav-item">Galeria</li>
+                <li id="nav-item"><a href="../pages/index.html">Galeria</a></li>
+                <li id="nav-item">Contato</li>
             </ul>
         </nav>
-        <div class="agende-whatsapp">
-            <button>Agendar pelo WhatsApp</button>
+
+        <div class="header-actions">
+
+            <a
+                href="https://wa.me/5513997106377"
+                target="_blank"
+                class="agende-aqui agende-header"
+            >
+                Agendar pelo WhatsApp
+            </a>
+
+            <button class="menu-toggle">
+                ☰
+            </button>
+
         </div>
+
     </header>
 
     <main>
+
         <section class="title-container">
             <div class="title-content">
                 <h1>Galeria de</h1>
                 <h2>Unhas</h2>
-                <p class="conheca-modelos">Conheça alguns dos modelos</p>
-                <p class="aplicado-clientes">Aplicado em meus clientes.</p>
+
+                <p class="conheca-modelos">
+                    Conheça alguns dos modelos
+                </p>
+
+                <p class="aplicado-clientes">
+                    Aplicado em meus clientes.
+                </p>
             </div>
         </section>
+
         <section class="container-cards">
             <div class="actions">
                 <button>Todas</button>
             </div>
         </section>
+
         <section class="content-cards">
-             <div class="nails-card">
+            <div class="nails-card">
+
                 <div class="card">
                     <img src="../images/unha1.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha2.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha3.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha4.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha5.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha6.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha7.jpeg" alt="Nail">
                 </div>
-                 <div class="card">
+
+                <div class="card">
                     <img src="../images/unha8.jpeg" alt="Nail">
                 </div>
+
                 <div class="card">
                     <img src="../images/unha9.jpeg" alt="Nail">
                 </div>
+
             </div>
         </section>
-        
+
         <section class="content-modelo">
+
             <div class="modelo">
-                <h3>Gostou de <span>algum modelo?</span></h3>
-                <p>Agende seu horário e venha realizar suas unhas dos sonhos!</p>
+                <h3>
+                    Gostou de <span>algum modelo?</span>
+                </h3>
+
+                <p>
+                    Agende seu horário e venha realizar suas unhas dos sonhos!
+                </p>
             </div>
+
             <div class="agenda">
-                <button class="agende-aqui">Agendar pelo WhatsApp ➜</button>
-            </div> 
+                <a
+                    href="https://wa.me/5513997106377"
+                    target="_blank"
+                    class="agende-aqui"
+                >
+                    Agendar pelo WhatsApp ➜
+                </a>
+            </div>
+
         </section>
+
     </main>
 
     <footer>
-        <p>@2026 Nail Giovanna. Todos os direitos reservados</p>
+        <p>
+            © 2026 Nail Giovanna. Todos os direitos reservados.
+        </p>
     </footer>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
